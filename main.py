@@ -2,7 +2,6 @@ import os
 import discord
 from discord.ext import commands
 
-# CHANNEL_ID = 1283611836792438835
 CHANNEL_ID = int(os.environ.get('CHANNEL_ID'))
 BOT_ID = os.environ.get('BOT_ID')
 
