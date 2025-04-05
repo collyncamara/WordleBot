@@ -11,6 +11,7 @@ if CHANNEL_ID is None or BOT_ID is None:
     exit(1)
 else:
     print(f"CHANNEL_ID: {CHANNEL_ID}")
+    print(f"CHANNEL_ID type: {type(CHANNEL_ID)}")
     print(f"BOT_ID: {BOT_ID}")
 
 intents = discord.Intents.all()
