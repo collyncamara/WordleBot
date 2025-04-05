@@ -2,12 +2,16 @@ import os
 import discord
 from discord.ext import commands
 
-CHANNEL_ID = 1283611836792438835
+# CHANNEL_ID = 1283611836792438835
+CHANNEL_ID = os.environ.get('CHANNEL_ID')
 BOT_ID = os.environ.get('BOT_ID')
 
 if CHANNEL_ID is None or BOT_ID is None:
     print("Please set the CHANNEL_ID and BOT_ID environment variables.")
     exit(1)
+else:
+    print(f"CHANNEL_ID: {CHANNEL_ID}")
+    print(f"BOT_ID: {BOT_ID}")
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='$', description='descrip', intents=intents)
