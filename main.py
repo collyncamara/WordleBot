@@ -2,7 +2,7 @@ import os
 import discord
 from discord.ext import commands
 
-CHANNEL_ID = os.environ.get('CHANNEL_ID')
+CHANNEL_ID = 1283611836792438835
 BOT_ID = os.environ.get('BOT_ID')
 
 if CHANNEL_ID is None or BOT_ID is None:
